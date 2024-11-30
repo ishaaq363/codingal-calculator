@@ -1,0 +1,82 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.428),rgba(1, 10, 4, 0.375)), url("calculator.png");	margin: 20px auto;	
+	
+}
+	
+#container{
+	width: 1000px;
+	height: 550px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.428),rgba(1, 10, 4, 0.375)), url("calculator.png");	margin: 20px auto;	
+    border-radius: 50px;
+}
+#calculator{
+	width: 320px;
+	height: 520px;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(145deg, rgb(100, 102, 103), #000000);
+    
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 15px;
+	border-width: 4px;
+    border-color: rgb(125, 160, 8);
+	font-weight: bold;
+	font-size: 15px;
+     background: linear-gradient(145deg, rgb(0, 0, 0), #96c908);
+     color: white;
+     font-size: x-large;
+     font-weight:100;
+     box-shadow:  4px 4px 8px rgb(0, 0, 0),
+     -4px -4px 8px rgba(0, 0, 0, 0.953);
+   }
+.number, .empty{
+    box-shadow:  4px 4px 8px rgb(0, 0, 0),
+    -4px -4px 8px rgba(0, 0, 0, 0.953);
+    background: linear-gradient(145deg, rgb(0, 0, 0), #08bdb4);
+    color: rgb(255, 255, 255);
+   font-size: x-large;
+   font-weight: 200;
+   border-color: rgb(19, 150, 164);
+}
+.number, .operator{
+	cursor: pointer;
+}
+
+.operator:active, .number:active{
+	font-size:20px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+
+#result{
+	height:120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 20px;
+	padding-top: 28px;
+	font-size: 15px;
+	color: white;
+}
+
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+	
+}
